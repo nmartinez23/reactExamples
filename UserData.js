@@ -1,8 +1,16 @@
+class Avatar extends React.Component {
+  render() {
+    return (
+      <img src={this.props.img} />
+    )
+  }
+}
+
 class Badge extends React.Component {
   render() {
     return (
       <div>
-        <Avatar />
+        <Avatar {this.props.user.img}/>
         <Label />
         <ScreenName />
       </div>
